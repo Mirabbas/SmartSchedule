@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "690732349346",
+    "firebase_url": "https://smartschedule-f9f6b.firebaseio.com",
+    "project_id": "smartschedule-f9f6b",
+    "storage_bucket": "smartschedule-f9f6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690732349346:android:9c147dbd337358b3",
+        "android_client_info": {
+          "package_name": "mirabbas.smartschedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690732349346-76u795qvpit76eh4v5s0kqemecbfcl4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mirabbas.smartschedule",
+            "certificate_hash": "8de24766a79d307ed891c9adfcff577e6944ef20"
+          }
+        },
+        {
+          "client_id": "690732349346-vineukr36lpor6kvq2m3jv6fht9h8jut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdNzYVepd6UI0RxbRkq-Kb39yp8_btX9Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690732349346-vineukr36lpor6kvq2m3jv6fht9h8jut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

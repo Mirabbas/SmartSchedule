@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4799E8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4799E8</color>
+
+    <color name="colorStudent">#04819E</color>
+    <color name="colorTeacher">#FF7800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="acid">#00FF48</color>
+    <color name="blue1">#5CB5F6</color>
+    <color name="dark_blue">#2C85C6</color>
+    <color name="light_yellow">#FFDB3B</color>
+
+
+
+
+    <color name="theme_color">#3A4555</color>
+    <color name="dark_theme_color">#222D3D</color>
+
+    <color name="light_red">#AF3120</color>
+
+
+
+</resources>

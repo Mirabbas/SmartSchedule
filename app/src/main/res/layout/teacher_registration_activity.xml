@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_teacher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:id="@+id/mandatory_fields_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mandatory"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_teacher"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="@string/user_name"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@+id/mandatory_fields_teacher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastname_teacher"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="@string/user_last_name"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/name_teacher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patronymic_teacher"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="@string/user_patronymic"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/lastname_teacher"/>
+
+
+
+        <TextView
+            android:id="@+id/gender_title_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patronymic_teacher"
+            android:text="@string/user_gender"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_teacher"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/patronymic_teacher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_teacher"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/email_teacher"/>
+
+        <RadioGroup
+            android:id="@+id/radio_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_teacher"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/man_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/man"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:theme="@style/MyRadioButton"/>
+            <RadioButton
+                android:id="@+id/woman_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/woman"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:theme="@style/MyRadioButton"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age_teacher"
+            android:inputType="numberDecimal"
+            android:hint="@string/user_age"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/radio_teacher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_teacher"
+            android:inputType="phone"
+            android:hint="@string/user_phone_number"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/age_teacher"/>
+
+        <RelativeLayout
+            android:id="@+id/facultet_teacher_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_teacher"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:id="@+id/tv_facultet_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_facultet"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/facultet_teacher_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:entries="@array/facultets"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dialog"
+                android:layout_alignStart="@+id/tv_facultet_teacher"
+                android:paddingStart="10dp">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cafedra_teacher_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facultet_teacher_layout"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:id="@+id/tv_teacher_cafedra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_cafedra"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/cafedra_teacher_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dialog"
+                android:layout_alignStart="@+id/tv_teacher_cafedra"
+                android:paddingStart="10dp">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/position_teacher"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="@string/position"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/cafedra_teacher_layout"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discipline_teacher"
+                android:inputType="textPersonName|textCapSentences"
+                android:hint="@string/user_disciplines"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_below="@+id/position_teacher"
+                />
+
+        <ImageView
+            android:id="@+id/add_discipline_img"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/discipline_teacher"
+            android:layout_alignBottom="@+id/discipline_teacher"
+            android:layout_alignRight="@+id/discipline_teacher"
+            android:src="@mipmap/ic_plus_circle_grey600_24dp"
+            android:clickable="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/experience_teacher"
+            android:inputType="number"
+            android:hint="@string/work_experience"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/discipline_teacher"/>
+
+        <TextView
+            android:id="@+id/what_need_lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/experience_teacher"
+            android:text="@string/need_on_lecture"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/lecture_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/what_need_lecture"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
+
+            <CheckBox
+                android:id="@+id/lecture_check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/academic_board"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+            <CheckBox
+                android:id="@+id/lecture_check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/projector"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/what_need_practice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lecture_layout"
+            android:text="@string/need_on_practice"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/practice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/what_need_practice"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
+
+            <CheckBox
+                android:id="@+id/practice_check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/academic_board"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+            <CheckBox
+                android:id="@+id/practice_check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/projector"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+            <CheckBox
+                android:id="@+id/practice_check_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/computer"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/what_need_labs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/practice_layout"
+            android:text="@string/need_on_labs"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/labs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/what_need_labs"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
+
+            <CheckBox
+                android:id="@+id/labs_check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/academic_board"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+            <CheckBox
+                android:id="@+id/labs_check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/projector"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+            <CheckBox
+                android:id="@+id/labs_check_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/computer"
+                android:textSize="20sp"
+                android:theme="@style/MyCheckBox"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/line2_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/labs_layout"/>
+
+        <TextView
+            android:id="@+id/optional_fields_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2_teacher"
+            android:text="@string/optional"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/interests_teacher"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="2"
+            android:hint="@string/user_interests"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/optional_fields_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_job_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interests_teacher"
+            android:text="@string/have_you_job"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/teacher_has_job_place_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_job_place"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yes_job_place_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:theme="@style/MyRadioButton"/>
+            <RadioButton
+                android:id="@+id/no_job_place_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:theme="@style/MyRadioButton"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/work_place_teacher"
+            android:inputType="textCapSentences"
+            android:hint="@string/user_job_place"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@+id/teacher_has_job_place_radio"
+            />
+
+        <TextView
+            android:id="@+id/tv_standing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_place_teacher"
+            android:text="@string/standing"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/job_standing_teacher_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="185dp"
+            android:spinnerMode="dialog"
+            android:layout_below="@id/work_place_teacher"
+            android:entries="@array/standing_array">
+
+        </Spinner>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/professional_teacher"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="2"
+            android:hint="@string/professional_area"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/job_standing_teacher_spinner"/>
+
+        <ImageView
+            android:id="@+id/add_prof_area_img"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/professional_teacher"
+            android:layout_alignBottom="@+id/professional_teacher"
+            android:layout_alignRight="@+id/professional_teacher"
+            android:src="@mipmap/ic_plus_circle_grey600_24dp"
+            android:clickable="true"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_teacher"
+            android:hint="@string/user_address"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/professional_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_publications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_teacher"
+            android:text="@string/publications"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vak"
+            android:hint="@string/vak"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/tv_publications"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scopus"
+            android:hint="@string/scopus"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/vak"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rinc"
+            android:hint="@string/rinc"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/scopus"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/web_of_science"
+            android:hint="@string/web_of_science"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/rinc"/>
+
+        <TextView
+            android:id="@+id/teacher_driver_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/web_of_science"
+            android:text="@string/driver_license"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/teacher_driver_license_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teacher_driver_license"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yes_license_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:theme="@style/MyRadioButton"/>
+            <RadioButton
+                android:id="@+id/no_license_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:theme="@style/MyRadioButton"/>
+
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/confirm_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_selector"
+            android:drawableStart="@mipmap/ic_done_white_24dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/teacher_driver_license_radio"
+            android:ems="10"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>

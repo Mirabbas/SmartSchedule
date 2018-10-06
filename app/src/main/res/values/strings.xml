@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">SmartSchedule</string>
+
+    <string name="student">Студент</string>
+    <string name="teacher">Преподаватель</string>
+
+    <string name="title_who_are_you">Кто вы</string>
+    <string name="title_student_registration">Регистрация студента</string>
+    <string name="title_teacher_registration">Регистрация преподавателя</string>
+    <string name="title_main_window">Главный экран</string>
+    <string name="title_teacher_email">E-mail</string>
+
+    <string name="user_name">Имя</string>
+    <string name="user_last_name">Фамилия</string>
+    <string name="user_patronymic">Отчество</string>
+    <string name="user_gender">Пол:</string>
+    <string name="user_age">Возраст</string>
+    <string name="user_phone_number">Тел. (+7 920 *** ****)</string>
+    <string name="user_group">Группа(напр. 14-СБК)</string>
+    <string name="user_facultet">Факультет</string>
+    <string name="user_cafedra">Кафедра</string>
+    <string name="user_heading">Направление</string>
+    <string name="user_course">Курс</string>
+    <string name="form_of_training">Форма обучения:</string>
+    <string name="user_interests">Интересы</string>
+    <string name="user_job_place">Место работы</string>
+    <string name="user_professional_achievements">Профессиональные достижения</string>
+    <string name="professional_area">Профессиональная область</string>
+    <string name="user_address">Адрес проживания</string>
+    <string name="user_disciplines">Дисциплины</string>
+    <string name="publications">Наличие публикаций:</string>
+    <string name="forms_of_disciplines">Форма проведения дисциплин</string>
+    <string name="position">Должность</string>
+    <string name="practice">Практика</string>
+    <string name="lecture">Лекции</string>
+    <string name="lab_work">Лабораторные работы</string>
+    <string name="academic_board">Доска учебная</string>
+    <string name="projector">Мультимедийная аудитория</string>
+    <string name="computer">Наличие компьютера</string>
+    <string name="work_experience">Преподавательский стаж</string>
+    <string name="need_on_lecture">Для проведения лекций требуется наличие:</string>
+    <string name="need_on_practice">Для проведения практики требуется наличие:</string>
+    <string name="need_on_labs">Для проведения лабораторных требуется наличие:</string>
+    <string name="email">E-mail</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="optional">Необязательные поля</string>
+    <string name="mandatory">Обязательные поля</string>
+    <string name="confirm">  Подтвердить</string>
+    <string name="registration">Регистрация</string>
+    <string name="group">Группа</string>
+
+    <string name="vak">ВАК</string>
+    <string name="scopus">SCOPUS</string>
+    <string name="rinc">РИНЦ</string>
+    <string name="web_of_science">Web of science</string>
+
+    <string name="have_you_job">Имеется дополнительное место работы?</string>
+    <string name="standing">Выберите стаж:</string>
+
+    <string name="input">Войти</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="send_email_teacher">Введите e-mail, подтвержденный в Деканате</string>
+    <string name="choose_count_students">Укажите кол-во студентов в группе</string>
+    <string name="select_checkboxes_for_questionnaire">Пожалуйста отметьте флажками необходимую информацию для аудитории</string>
+
+    <string name="hint_email_example">test@example.com</string>
+    <string name="send">Отправить</string>
+
+    <string name="man">Мужской</string>
+    <string name="woman">Женский</string>
+    <string name="full_time">Очная</string>
+    <string name="extramural">Заочная</string>
+    <string name="extramural_full">Очно-заочная</string>
+    <string name="baccalaureate">Бакалавриат</string>
+    <string name="magistracy">Магистратура</string>
+    <string name="specialty">Специалитет</string>
+
+    <string name="driver_license">Наличие водительского удостоверения</string>
+
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="input_msg">Введите текст</string>
+    <string name="group_chat_activity">Чат группы</string>
+    <string name="contact_with_group">Связаться с группой</string>
+    <string name="groups">Группы: </string>
+
+    <string name="loading">Загрузка</string>
+    <string name="error_registration">При регистрации произошла ошибка!</string>
+    <string name="min_passwd_length">Минимальная длина пароля 6 символов!</string>
+    <string name="warning_fill_all_fields">Заполните все обязательные поля!</string>
+    <string name="warning_fill_email_and_password">Заполните поля E-mail и Пароль или проверьте подключение к Интернету!</string>
+    <string name="ok_reg">Регистрация прошла успешно!</string>
+    <string name="incorrect_or_existing_email">E-mail некорректен либо уже существует!</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="next_pair">Следующая пара</string>
+    <string name="name_pair">Название: </string>
+    <string name="date_day_pair">Дата: </string>
+    <string name="lecture_hall">Аудитория: </string>
+    <string name="start_time_pair">Время начала: </string>
+    <string name="teacher_pair">Преподаватель: </string>
+    <string name="type_pair">Тип пары: </string>
+    <string name="news">Здесь будут новые уведомления!</string>
+    <string name="schedule">Посмотреть расписание</string>
+    <string name="schedule_one">Расписание</string>
+    <string name="group_chat">Чат группы</string>
+    <string name="short_send">Отпр.</string>
+
+    <string name="group_list">Выберите группу</string>
+    <string name="messages_label">Сообщения</string>
+    <string name="questionnaire">Опросник</string>
+
+    <string name="search_lecture_hall">аудитории</string>
+    <string name="choose_lecture_hall">Свободные аудитории</string>
+
+    <string-array name="questionnaire_list_fields">
+        <item>Наличие учебной доски</item>
+        <item>Наличие компьютера</item>
+        <item>Наличие проектора</item>
+    </string-array>
+
+    <string-array name="count_students">
+        <item>Менее 10</item>
+        <item>От 10 до 20</item>
+        <item>Более 20</item>
+    </string-array>
+
+    <string-array name="standing_array">
+        <item>Менее 1 года</item>
+        <item>От 1 до 3 лет</item>
+        <item>От 3 до 5 лет</item>
+        <item>От 5 до 7 лет</item>
+        <item>От 7 до 10 лет</item>
+        <item>Более 10 лет</item>
+
+    </string-array>
+
+    <string-array name="groups">
+        <item>14-Р</item>
+        <item>14-РЭС</item>
+        <item>14-ТР</item>
+        <item>14-ССК</item>
+        <item>14-СБК</item>
+        <item>14-СТ</item>
+        <item>14-КТ</item>
+        <item>14-ИТД</item>
+        <item>14-АС</item>
+        <item>14-В-1</item>
+        <item>14-В-2</item>
+        <item>14-ПМ</item>
+
+    </string-array>
+
+    <string-array name="facultets">
+        <item>ИТС</item>
+        <item>ИРИТ</item>
+        <item>ИПТМ</item>
+        <item>ИЯЭиТФ</item>
+        <item>ИНЭУ</item>
+        <item>ИНЭЛ</item>
+        <item>ИФХТиМ</item>
+        <item>ЗВФ</item>
+    </string-array>
+
+    <string-array name="its_cafedres">
+        <item>Автомобили и тракторы</item>
+        <item>Автомобильный транспорт</item>
+        <item>Аэрогидродинамика, прочность машин и сопротивление материалов</item>
+        <item>Высшая математика</item>
+        <item>Инженерная графика</item>
+        <item>Кораблестроение и авиационная техника</item>
+        <item>Проектирование и эксплуатация газонефтепроводов и газонефтехранилиц</item>
+        <item>Создание продукта в автомобилестроении</item>
+        <item>Строительные и дорожные машины</item>
+        <item>Энергетические установки и тепловые двигатели</item>
+        <item>Боевые бронированные колесные машины</item>
+    </string-array>
+
+    <string-array name="irit_cafedres">
+        <item>Вычислительные системы и технологии</item>
+        <item>Графические информационные системы</item>
+        <item>Информатика и системы управления</item>
+        <item>Информационные радиосистемы</item>
+        <item>Компьютерные технологии в проектировании и производстве</item>
+        <item>Прикладная математика</item>
+        <item>Электроника и сети ЭВМ</item>
+    </string-array>
+
+    <string-array name="iptm_cafedres">
+        <item>Автоматизация машиностроения</item>
+        <item>Артиллерийское вооружение</item>
+        <item>Машиностроительные технологические комплексы</item>
+        <item>Теоретическая и прикладная механика</item>
+        <item>Технология и оборудование машиностроения</item>
+    </string-array>
+
+    <string-array name="iyaetf_cafedres">
+        <item>Атомные и тепловые станции</item>
+        <item>Ядерные реакторы и энергетические установки</item>
+        <item>Физика и техника оптической связи</item>
+        <item>Общая и ядерная физика</item>
+        <item>Конструирование атомных установок</item>
+        <item>Системы управления жизненным циклом сложных инженерных объектов</item>
+        <item>Биоинженерия и ядерная медицина</item>
+    </string-array>
+
+    <string-array name="ineu_cafedres">
+        <item>Менеджмент</item>
+        <item>Методология, история и философия науки</item>
+        <item>Связи с общественностью, маркетинг и коммуникациии</item>
+        <item>Управление инновационной деятельностью</item>
+        <item>Физическое воспитание</item>
+        <item>Экономическая теория и эконометрика</item>
+        <item>Иностранные языки</item>
+    </string-array>
+
+    <string-array name="inel_cafedres">
+        <item>Электрооборудование, электропривод и автоматика</item>
+        <item>Электроэнергетика, электроснабжение и силовая электроника</item>
+        <item>Теоретическая и общая электротехника</item>
+    </string-array>
+
+    <string-array name="ifhtm_cafedres">
+        <item>Технология электрохимических производств и химии органических веществ</item>
+        <item>Нанотехнологии и биотехнологии</item>
+        <item>Производственная безопасность, экология и химия</item>
+        <item>Материаловедения, технологии материалов и термическая обработка металлов</item>
+        <item>Металлургические технологии и оборудование</item>
+    </string-array>
+
+    <string-array name="ochno_zaochno_cafedres">
+        <item>Информатика и вычислительная техника</item>
+        <item>Эксплуатация транспотрно-технологических машин и комплексов</item>
+        <item>Материаловедение и технололгии материалов</item>
+        <item>Автоматизация технологических процессов и производств</item>
+        <item>Технологические машины и оборудование</item>
+        <item>Конструкторско-технологическое обеспечение машиностроительных производств</item>
+        <item>Химическая технология</item>
+        <item>Радиотехника</item>
+        <item>Эксплуатация транспотрно-технологических машин и комплексов</item>
+        <item>Техносферая безопасность</item>
+        <item>Конструкторско-технологическое обеспечение машиностроительных производств</item>
+        <item>Проектирование технологических машин и комплексов</item>
+    </string-array>
+
+
+    <string name="choose_filter">Выбор фильтра</string>
+    <string name="month">Месяц</string>
+    <string name="week">Неделя</string>
+    <string name="day">День</string>
+
+
+</resources>

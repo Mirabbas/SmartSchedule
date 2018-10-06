@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context="mirabbas.smartschedule.activities.MainTeacherActivity"
+        android:background="@color/theme_color">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_yellow"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tv_date_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_name_t"/>
+
+        <TextView
+            android:id="@+id/tv_type_week_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_date_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_number_week_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_type_week_teacher"/>
+
+        <View
+            android:id="@+id/next_pair_line_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/tv_number_week_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_next_pair_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/next_pair"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/next_pair_line_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_name_pair_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/name_pair"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_next_pair_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_date_day_pair_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/date_day_pair"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_name_pair_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_lecture_hall_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/lecture_hall"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_date_day_pair_teacher"/>
+
+        <LinearLayout
+            android:id="@+id/icons_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date_day_pair_teacher"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="130dp">
+
+            <ImageView
+                android:id="@+id/board_image"
+                android:src="@mipmap/ic_dashboard_white_24dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/computer_image"
+                android:src="@mipmap/ic_computer_white_24dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/projector_image"
+                android:src="@mipmap/ic_camera_roll_white_24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_start_time_pair_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/start_time_pair"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_lecture_hall_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_group_name_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/groups"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_start_time_pair_teacher"/>
+
+        <TextView
+            android:id="@+id/tv_type_pair_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/type_pair"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_group_name_teacher"/>
+
+
+        <TextView
+            android:id="@+id/tv_news_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/news"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/tv_type_pair_teacher"/>
+
+        <Button
+            android:id="@+id/groups_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_with_group"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv_news_teacher" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_lecture_hall"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/white"
+            android:layout_below="@+id/groups_button"
+            android:drawableLeft="@mipmap/ic_search_white_24dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>
